@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        box-sizing: border-box;
+        font-family: 'Playfair Display', serif;
+        background-color: rgb(241, 238, 238);
+      }
+
+      article {
+        width: 60vw;
+        height: auto;
+        margin: auto;
+        background-color: rgb(230, 219, 219);
+        border: 0.2rem solid rgb(187, 186, 186);
+        border-radius: 1.5rem;
+        font-size: 1.8rem;
+        text-align: center;
+      }
+      section form {
+        font-family: 'Poor Story', cursive;
+        font-size: 1.3rem;
+      }
+      
+      section#res {
+        background-color: rgb(245, 235, 235);
+        border: 0.2rem solid rgb(189, 173, 173);
+        border-radius: 0.8rem;
+        min-height: 65vh;
+        margin: 1.1rem
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section>
+        <h1>User Data Center</h1>
+        <form action="#" method="GET">
+          <input type="radio" name="person" value="father" id="father">
+          <label for="father">Father</label>
+
+          <input type="radio" name="person" value="mother" id="mother">
+          <label for="mother">mother</label>
+
+          <input type="radio" name="person" value="son" id="son">
+          <label for="son">Son</label>
+        </form>
+      </section>
+
+      <section id="res">
+        <h4>
+          Check Result here
+        </h4>
+        <div id="display"></div>
+      </section>
+    </article>
+  </body>
+
+  <script>
+    const person = {
+      father: {
+        name: "John",
+        age: 45,
+        job: "Businessman",
+        address: "New York",
+        phone: "1234567890",
+        email: "john@gmail.com",
+      },
+      mother: {
+        name: "Jane",
+        age: 40,
+        job: "Housewife",
+        address: "New York",
+        phone: "1234567890",
+        email: "jane@gmail.com"
+      },
+      son: {
+        name: "Jack",
+        age: 15,
+        job: "Student",
+        address: "New York",
+        phone: "1234567890",
+        email: "jack@gmail.com"
+      }
+    }
+
+
+    document.querySelectorAll('input').forEach((input) => {
+      input.addEventListener('click', function() {
+        document.getElementById('display').innerHTML = `
+        <p>Name: ${person[this.value].name}</p>
+        <p>Age: ${person[this.value].age}</p>
+        <p>Job: ${person[this.value].job}</p>
+        <p>Address: ${person[this.value].address}</p>
+        <p>Phone: ${person[this.value].phone}</p>
+        <p>Email: ${person[this.value].email}</p>
+      `
+      })
+    })
+  
+  
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault()
+    })
+  </script>
+</html>

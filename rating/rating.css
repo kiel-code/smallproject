@@ -1,0 +1,31 @@
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: auto;
+  background-color: rgb(232, 234, 236);
+  color: rgb(255, 255, 255);
+}
+
+article {
+  width: 95vw;
+  height: 85vh;
+  margin: 7rem auto;
+  background-color: rgb(0, 0, 0);
+}
+
+section#container {
+  width: 30vw;
+  margin: auto;
+  background-color: rgb(26, 33, 41);
+}
+
+section#btn {
+  border: none;
+  border-radius: 50%;
+}
+
+section#btn input {
+  display: grid;
+  background-color: rgb(251, 116, 19);
+  color: rgb(255, 255, 255);
+}

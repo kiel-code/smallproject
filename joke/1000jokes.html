@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quote</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        background-color: rgb(230, 235, 234);
+      }
+
+      article {
+        width: 60vw;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        border: 0.4rem solid rgb(65, 128, 121);
+        box-shadow: 0.1rem 0.3rem 0.5rem 0.6rem rgb(189, 226, 222);
+        border-radius: 1.5rem;
+      }
+
+      section h1, button, h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 3rem;
+      }
+
+      section button {
+        background-color: rgb(161, 235, 228);
+        border-radius: 0.7rem;
+        border: none;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+      }
+
+      section#res {
+        background-color: rgb(157, 224, 219);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 0.12rem solid rgb(42, 134, 125);
+        border-radius: 0.8rem;
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
+        padding: 0.4rem;
+      }
+
+      h2 {
+        font-size: 2.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section>
+        <h1>Jokes Centre</h1>
+        <button type="button" id="new">
+          New
+        </button>
+      </section>
+      
+      <section id="res">
+        <h2>Jokes Result</h2>
+        <p id="display"></p>
+      </section>
+    </article>
+  </body>
+  <script>
+    const jokes = [
+      'Why do you think hens sit on eggs? Because they do not have chairs.',
+      'How do you call a Russian tree? Dimitree.',
+      'Hey, have you ever smelled month ball legs? No, how did you get its legs apart!',
+      'Do you know how a train eats? It goes chew chew.',
+      'Did you hear about the African man who drank 500 cups of tea? He nearly drowned in his tea pee.',
+      'How do you call it when an egg is on point? Egg zactly.',
+      'What did the two rednecks say after breaking up? Well, buddy let us be cousins.',
+      'Which came first, the Chicken or the Egg? The rooster of course.',
+      'Why do you think life might be a virgin? Because it is hard.',
+      'Why is it easy to weigh a fish? It got scales.',
+    ]
+    
+    document.getElementById('new').addEventListener('click', () => {
+      const theJoke = jokes[Math.floor(Math.random() * jokes.length)];
+      
+      document.getElementById('display').innerHTML = `
+      <p>${theJoke.split('?')[0]}?</p>
+      <p><em>${theJoke.split('?')[1]}</em></p>`;
+    });
+  </script>
+</html>

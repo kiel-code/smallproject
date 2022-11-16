@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cels-Fahr</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        box-sizing: border-box;
+        font-family: 'Poor Story', cursive;
+        background-color: rgb(247, 240, 240);
+      }
+
+      article {
+        width: 60vw;
+        height: 60vh;
+        margin: 7.38rem auto;
+        background-color: rgb(240, 238, 238);
+        border: 0.14rem solid rgb(158, 136, 136);
+        border-radius: 0.9rem;
+        text-align: center;
+      }
+
+      section {
+       display: grid;
+       grid-row-gap: 0.2rem
+      }
+
+      h1 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 2.2rem;
+      }
+
+      section label, input {
+        font-size: 1.4rem;
+      }
+
+      section input {
+        background-color: inherit;
+        border: 0.1rem solid rgb(133, 131, 131);
+        border-radius: 0.5rem;
+        padding: 0.6rem;
+        height: 2.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section>
+        <h1>
+          Matt Convertion Units
+        </h1>
+
+        <label for="ce">Celsius</label>
+        <input type="number" name="number" id="ce">
+
+        <label for="fa">Fahrenheit</label>
+        <input type="number" name="number" id="fa">
+      </section>
+    </article>
+  </body>
+  <script>
+
+    // Celsius to Fahrenheit
+    function celsFahr(cel) {
+      return (cel * 9 / 5) + 32;
+    }
+
+    // Fahrenheit to Celsius
+    function fahrCels(fah) {
+      return [ (fah - 32) * 5] / 9;
+    }
+
+    document.getElementById('ce').addEventListener('keyup', function () {
+      const cel = Number(this.value.trim());
+      if(cel === 0) {
+        return document.getElementById('fa').value = '';
+      }
+      document.getElementById('fa').value = celsFahr(cel);
+    })
+
+    document.getElementById('fa').addEventListener('keyup', function () {
+      const fah = Number(this.value.trim());
+      if(fah === 0) {
+        return document.getElementById('ce').value = '';
+      }
+      document.getElementById('ce').value = fahrCels(fah);
+    })
+    
+  </script>
+</html>

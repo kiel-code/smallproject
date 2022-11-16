@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quote</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        background-color: rgb(250, 246, 228);
+      }
+
+      article {
+        width: 60vw;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        border: 0.4rem solid rgb(170, 162, 120);
+        box-shadow: 0.1rem 0.3rem 0.5rem 0.6rem rgb(250, 237, 191);
+        border-radius: 1.5rem;
+      }
+
+      section h1, button, h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 3rem;
+      }
+
+      section button {
+        background-color: rgb(250, 237, 191);
+        border-radius: 0.7rem;
+        border: none;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+      }
+
+      section#res {
+        background-color: rgb(247, 239, 206);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 0.12rem solid rgb(199, 182, 99);
+        border-radius: 0.8rem;
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
+        padding: 0.4rem;
+      }
+
+      h2 {
+        font-size: 2.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section>
+        <h1>Online Jokes</h1>
+        <button type="button" id="cli">
+          Click
+        </button>
+      </section>
+      
+      <section id="res">
+        <h2>Jokes Result</h2>
+        <p id="display"></p>
+      </section>
+    </article>
+  </body>
+  <script>
+    const jokes = [
+      'Evening news is where they begin with "Good evening", and then proceed to tell you why it isn"t.',
+      'I asked God for a bike, but I know God doesn"t work that way. So I stole a bike and asked for forgiveness.',
+      'Relationships are a lot like algebra. Have you ever looked at your X and wondered Y?',
+      'Laugh at your problems, everybody else does',
+      'I used to be indecisive. Now I"m not so sure.',
+      'If you think nobody cares if you"re alive, try missing a couple of payments.',
+      'Drink coffee! Do stupid things faster with more energy!',
+      ' I find it ironic that the colors red, white, and blue stand for freedom until they are flashing behind you.',
+      'Money talks …but all mine ever says is good-bye.',
+      'Two wrongs don"t make a right, take your parents as an example.',
+      'Team work is important; it helps you put the blame on someone else.',
+      'You know that tingly little feeling you get when you like someone? That"s your common sense leaving your body.',
+      'Dear alcohol, We had a deal where you would make me funnier, smarter, and a better dancer… I saw the video… we need to talk.',
+      ' Some people say “If you can"t beat them, join them”. I say “If you can"t beat them, beat them”, because they will be expecting you to join them, so you will have the element of surprise.',
+      'Funny how we need to talk really means you need to listen.',
+      'Nothing ruins a Friday more than realizing that it"s Tuesday.',
+      'Jesus loves you, but everyone else thinks you"re an a**hole.',
+      'If you are supposed to learn from your mistakes, why do some people have more than one child.',
+      'Do not argue with an idiot. He will drag you down to his level and beat you with experience.',
+      'Just about the time when you think you can make ends meet, somebody moves the ends.',
+      ' Is google a woman? Because it won"t let you finish your sentence without coming up with other suggestions.',
+      'Isn"t it great to live in the 21st century? Where deleting history has become more important than making it.',
+      'I can totally keep secrets. It"s the people I tell them to that can"t.',
+      'My job is secure. No one else wants it.',
+      'Always borrow money from a pessimist. He won"t expect it back.',
+      'That awkward moment when you leave a store without buying anything and all you can think is “act natural, you"re innocent.”',
+      'Knowledge is knowing a tomato is a fruit. Wisdom is not putting it in a fruit salad.',
+      'Materialism: buying things we don"t need with money we don"t have to impress people that don"t matter.',
+      'A celebrity is someone who works hard all his life to become known and then wears dark glasses to avoid being recognized.',
+      'You have two choices in life: You can stay single and be miserable, or get married and wish you were dead.'
+    ]
+    
+    document.getElementById('cli').addEventListener('click', () => {
+      document.getElementById('display').innerText = jokes[Math.floor(Math.random() * jokes.length)];
+    })
+  </script>
+</html>
