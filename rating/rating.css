@@ -4,6 +4,8 @@ body {
   height: auto;
   background-color: rgb(232, 234, 236);
   color: rgb(255, 255, 255);
+  line-height: 1.5rem;
+  font-size: 1.06rem;
 }
 
 article {
@@ -16,7 +18,19 @@ article {
 section#container {
   width: 30vw;
   margin: auto;
+  padding: 2rem;
   background-color: rgb(26, 33, 41);
+  border-radius: 1.3rem;
+}
+
+/* section#rate p, section#btn button {
+} */
+
+section#star, section#btn button {
+  width: 1.6rem;
+  background-color: rgb(46, 64, 94);
+  color: hsl(216, 12%, 54%);
+  border-radius: 50%;
 }
 
 section#btn {
@@ -25,7 +39,12 @@ section#btn {
 }
 
 section#btn input {
+  width: 100%;
   display: grid;
   background-color: rgb(251, 116, 19);
   color: rgb(255, 255, 255);
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  padding: 0.4rem;
 }
