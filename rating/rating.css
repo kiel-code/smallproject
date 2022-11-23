@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   width: 100vw;
   height: auto;
-  background-color: rgb(232, 234, 236);
+  background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   line-height: 1.5rem;
   font-size: 1.06rem;
@@ -10,41 +10,56 @@ body {
 
 article {
   width: 95vw;
-  height: 85vh;
+  height: auto;
   margin: 7rem auto;
-  background-color: rgb(0, 0, 0);
 }
 
 section#container {
   width: 30vw;
   margin: auto;
   padding: 2rem;
-  background-color: rgb(26, 33, 41);
+  background-color: rgb(19, 28, 37);
   border-radius: 1.3rem;
 }
 
-/* section#rate p, section#btn button {
-} */
+section#rate p, section#btn button {
+  color: rgb(124, 135, 152);
+}
 
 section#star, section#btn button {
-  width: 1.6rem;
-  background-color: rgb(46, 64, 94);
-  color: hsl(216, 12%, 54%);
+  width: 1.5rem;
+  background-color: hsl(203, 21%, 22%);
   border-radius: 50%;
 }
 
-section#btn {
+section#btn button {
   border: none;
   border-radius: 50%;
+  
+}
+
+section#btn button:hover {
+  background-color: rgb(252, 117, 21);
+  color: rgb(255, 255, 255);
+}
+
+section#btn button:active {
+  background-color: rgb(149, 158, 172);
 }
 
 section#btn input {
   width: 100%;
   display: grid;
-  background-color: rgb(251, 116, 19);
+  background-color: rgb(252, 117, 21);
   color: rgb(255, 255, 255);
+  border: none;
   border-radius: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-variant: small-caps;
   padding: 0.4rem;
+}
+
+section#btn input:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(252, 117, 21);
 }
