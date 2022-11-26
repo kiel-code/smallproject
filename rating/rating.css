@@ -3,10 +3,9 @@ body {
   width: 100vw;
   height: auto;
   font-family: 'Overpass', sans-serif;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(18, 20, 23);
   color: rgb(255, 255, 255);
   line-height: 1.5rem;
-  font-size: 1.06rem;
 }
 
 article {
@@ -19,7 +18,7 @@ section#container {
   width: 24.5vw;
   margin: auto;
   padding: 2rem;
-  background-color: rgb(19, 28, 37);
+  background-color: rgb(25, 35, 46);
   border-radius: 1.3rem;
 }
 
@@ -30,7 +29,6 @@ section#rate p, section#btn button {
 
 section#rate h1 {
   font-size: 1.75rem;
-  font-weight: 700;
   margin-bottom: 0rem;
 }
 
