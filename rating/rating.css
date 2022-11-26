@@ -2,6 +2,7 @@ body {
   box-sizing: border-box;
   width: 100vw;
   height: auto;
+  font-family: 'Overpass', sans-serif;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   line-height: 1.5rem;
@@ -15,7 +16,7 @@ article {
 }
 
 section#container {
-  width: 30vw;
+  width: 26vw;
   margin: auto;
   padding: 2rem;
   background-color: rgb(19, 28, 37);
@@ -24,18 +25,34 @@ section#container {
 
 section#rate p, section#btn button {
   color: rgb(124, 135, 152);
+  font-size: 0.9375rem;
+}
+
+section#rate h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0rem;
 }
 
 section#star, section#btn button {
   width: 1.5rem;
   background-color: hsl(203, 21%, 22%);
   border-radius: 50%;
+  text-align: center;
+}
+
+section#btn {
+  /* width: 100%; */
+  border: 0.2rem solid red;
 }
 
 section#btn button {
+  width: auto;
   border: none;
-  border-radius: 50%;
-  
+  margin: 0.51rem;
+  margin-left: auto;
+  margin-top: auto;
+  padding: 1.1rem;
 }
 
 section#btn button:hover {
@@ -54,9 +71,9 @@ section#btn input {
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-variant: small-caps;
-  padding: 0.4rem;
+  padding: 0.67rem;
 }
 
 section#btn input:hover {
