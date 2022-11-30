@@ -16,7 +16,7 @@ body {
 } */
 
 section#container, div#feed {
-  width: 29.32vw;
+  width: 30.27vw;
   margin: 7rem auto;
   padding: 2rem;
   background-color: rgb(28, 38, 48);
@@ -28,7 +28,7 @@ section#rate p, section form button, div section#remark p {
   font-size: 0.9375rem;
 }
 
-section#rate h1 {
+section#rate h1, section#remark h1 {
   font-size: 1.75rem;
   margin-bottom: 0rem;
 }
