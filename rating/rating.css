@@ -15,7 +15,7 @@ body {
   margin: 7rem auto;
 } */
 
-section#container {
+section#container, div#feed {
   width: 29.32vw;
   margin: 7rem auto;
   padding: 2rem;
@@ -23,7 +23,7 @@ section#container {
   border-radius: 1.3rem;
 }
 
-section#rate p, section#btn button {
+section#rate p, section form button, div section#remark p {
   color: rgb(124, 135, 152);
   font-size: 0.9375rem;
 }
@@ -33,7 +33,7 @@ section#rate h1 {
   margin-bottom: 0rem;
 }
 
-section#star, section#btn button {
+section#star, section form button {
   width: 2.4rem;
   background-color: rgb(37, 50, 58);
   border-radius: 50%;
@@ -41,17 +41,16 @@ section#star, section#btn button {
   text-align: center;
 }
 
-section#btn {
-  /* width: 100%; */
+section form {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   grid-gap: 0.9rem 0.5rem;
-  /* height: auto; */
+  justify-content: space-between;
   /* margin-right: 4rem; */
   border: 0.1rem solid red;
 }
 
-section#btn button {
+section form > button {
   width: auto;
   border: none;
   /* margin: 1rem;
@@ -60,18 +59,18 @@ section#btn button {
   padding: 1.1rem;
 }
 
-section#btn button:hover {
+section form button:hover {
   background-color: rgb(252, 117, 21);
   color: rgb(255, 255, 255);
 }
 
-section#btn button:active {
+section form button:active {
   background-color: rgb(149, 158, 172);
 }
 
-section#btn input {
+section form > input {
   width: 100%;
-  display: grid;
+  /* display: grid; */
   background-color: rgb(252, 117, 21);
   color: rgb(255, 255, 255);
   border: none;
@@ -81,7 +80,14 @@ section#btn input {
   padding: 0.67rem;
 }
 
-section#btn input:hover {
+section form input:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(252, 117, 21);
+}
+
+
+/******* Thank You Rate *******/
+
+div#feed {
+  text-align: center;
 }
