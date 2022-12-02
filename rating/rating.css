@@ -37,18 +37,18 @@ section#star, section form button {
   text-align: center;
 }
 
-section form {
+section form div#num {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  grid-gap: 0.9rem 0.5rem;
+  grid-gap: 0.5rem;
   justify-content: space-between;
-  border: 0.1rem solid red;
+  margin-bottom: 1.5rem;
 }
 
-section form > button {
-  width: auto;
+section form div#num button {
+  width: 3.1rem;
   border: none;
-  padding: 1.1rem;
+  padding: 1rem;
 }
 
 section form button:hover {
@@ -83,17 +83,13 @@ div#feed {
   text-align: center;
 }
 
-section p {
+section#pic p {
   width: 12rem;
   background-color: rgb(37, 50, 58);
   color: rgb(199, 120, 64);
   border-radius: 1rem;
+  margin: 0.9rem auto;
   padding: 0.2rem;
   font-size: 0.9375rem;
   text-align: center;
-}
-
-section#remark > p {
-  width: auto;
-  background-color: inherit;
 }
