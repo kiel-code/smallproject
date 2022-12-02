@@ -11,10 +11,6 @@ body {
   line-height: 1.5rem;
 }
 
-/* article {
-  margin: 7rem auto;
-} */
-
 section#container, div#feed {
   width: 30.27vw;
   margin: 7rem auto;
@@ -46,21 +42,17 @@ section form {
   grid-template-columns: auto auto auto auto auto;
   grid-gap: 0.9rem 0.5rem;
   justify-content: space-between;
-  /* margin-right: 4rem; */
   border: 0.1rem solid red;
 }
 
 section form > button {
   width: auto;
   border: none;
-  /* margin: 1rem;
-  margin-left: auto;
-  margin-top: auto; */
   padding: 1.1rem;
 }
 
 section form button:hover {
-  background-color: rgb(252, 117, 21);
+  background-color: rgb(250, 107, 4);
   color: rgb(255, 255, 255);
 }
 
@@ -68,10 +60,9 @@ section form button:active {
   background-color: rgb(149, 158, 172);
 }
 
-section form > input {
+section form input {
   width: 100%;
-  /* display: grid; */
-  background-color: rgb(252, 117, 21);
+  background-color: rgb(250, 107, 4);
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 1.5rem;
@@ -82,7 +73,7 @@ section form > input {
 
 section form input:hover {
   background-color: rgb(255, 255, 255);
-  color: rgb(252, 117, 21);
+  color: rgb(250, 107, 4);
 }
 
 
@@ -90,4 +81,19 @@ section form input:hover {
 
 div#feed {
   text-align: center;
+}
+
+section p {
+  width: 12rem;
+  background-color: rgb(37, 50, 58);
+  color: rgb(199, 120, 64);
+  border-radius: 1rem;
+  padding: 0.2rem;
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+section#remark > p {
+  width: auto;
+  background-color: inherit;
 }
