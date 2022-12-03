@@ -13,10 +13,10 @@ body {
 
 section#container, div#feed {
   width: 30.27vw;
-  margin: 7rem auto;
+  margin: 6.83rem auto;
   padding: 2rem;
   background-color: rgb(28, 38, 48);
-  border-radius: 1.3rem;
+  border-radius: 1.9rem;
 }
 
 section#rate p, section form button, div section#remark p {
@@ -29,34 +29,37 @@ section#rate h1, section#remark h1 {
   margin-bottom: 0rem;
 }
 
-section#star, section form button {
-  width: 2.4rem;
+section#star, section form div#num button {
+  width: 3.15rem;
   background-color: rgb(37, 50, 58);
   border-radius: 50%;
-  padding: 0.47rem;
+  padding: 0.78rem;
+  font-size: 2rem;
   text-align: center;
 }
 
 section form div#num {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  grid-gap: 0.5rem;
+  grid-gap: 0.4rem;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.9rem;
+  margin-top: 1.6rem;
 }
 
 section form div#num button {
-  width: 3.1rem;
   border: none;
-  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.9rem;
 }
 
-section form button:hover {
+section form div#num button:hover {
   background-color: rgb(250, 107, 4);
   color: rgb(255, 255, 255);
 }
 
-section form button:active {
+section form div#num button:active {
   background-color: rgb(149, 158, 172);
 }
 
@@ -66,9 +69,9 @@ section form input {
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 1.5rem;
+  font-weight: 700;
   font-size: 1rem;
-  font-variant: small-caps;
-  padding: 0.67rem;
+  padding: 0.9rem;
 }
 
 section form input:hover {
@@ -88,8 +91,8 @@ section#pic p {
   background-color: rgb(37, 50, 58);
   color: rgb(199, 120, 64);
   border-radius: 1rem;
-  margin: 0.9rem auto;
-  padding: 0.2rem;
+  margin: 1.4rem auto;
+  padding: 0.3rem;
   font-size: 0.9375rem;
   text-align: center;
 }
